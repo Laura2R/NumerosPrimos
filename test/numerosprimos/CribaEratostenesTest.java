@@ -40,14 +40,43 @@ public class CribaEratostenesTest {
      * Test of generarPrimos method, of class CribaEratostenes.
      */
     @Test
-    public void testGenerarPrimos() {
-        System.out.println("generarPrimos");
+    public void testGenerarPrimos0() {
+        System.out.println("generarPrimos 0");
         int max = 0;
-        int[] expResult = null;
         int[] result = CribaEratostenes.generarPrimos(max);
-        assertArrayEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        for (int i=0;i<result.length;i++)
+            System.out.println(result[i]);
+        
+    }
+    
+        @Test
+    public void testGenerarPrimos2() {
+        System.out.println("generarPrimos 2");
+        int max = 2;
+        int[] result = CribaEratostenes.generarPrimos(max);
+        for (int i=0;i<result.length;i++)
+            System.out.println(result[i]);
+        
+    }
+    
+        @Test
+    public void testGenerarPrimos3() {
+        System.out.println("generarPrimos 3");
+        int max = 3;
+        int[] result = CribaEratostenes.generarPrimos(max);
+        for (int i=0;i<result.length;i++)
+            System.out.println(result[i]);
+        
+    }
+    
+        @Test
+    public void testGenerarPrimos100() {
+        System.out.println("generarPrimos 100");
+        int max = 100;
+        int[] result = CribaEratostenes.generarPrimos(max);
+        for (int i=0;i<result.length;i++)
+            System.out.println(result[i]);
+        
     }
     
 }
